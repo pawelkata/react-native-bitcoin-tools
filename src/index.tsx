@@ -1,1 +1,1 @@
-export { getCurrentPrice } from './functions/getCurrentPrice';
+export * from './functions';
