@@ -47,23 +47,20 @@
   },
   "keywords": [
     "bitcoin",
-    "react-native",
-    "ios",
-    "android",
     "blockchain",
-    "mempool",
-    "types"
+    "mempool.space",
+    "react-native"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pawelkata/react-bitcoin-tools.git"
+    "url": "git+https://github.com/pawelkata/react-native-bitcoin-tools.git"
   },
   "author": "Paweł Kata <gmabber@gmail.com> (https://github.com/pawelkata)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pawelkata/react-bitcoin-tools/issues"
+    "url": "https://github.com/pawelkata/react-native-bitcoin-tools/issues"
   },
-  "homepage": "https://github.com/pawelkata/react-bitcoin-tools#readme",
+  "homepage": "https://github.com/pawelkata/react-native-bitcoin-tools#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
