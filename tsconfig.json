@@ -2,14 +2,19 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-bitcoin-tools": ["./src/index"]
+      "react-bitcoin-tools": [
+        "./src/index"
+      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,
