@@ -11711,22 +11711,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-bitcoin-tools-example@workspace:example":
-  version: 0.0.0-use.local
-  resolution: "react-bitcoin-tools-example@workspace:example"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@expo/metro-runtime": ~4.0.0
-    expo: ~52.0.25
-    expo-status-bar: ~2.0.1
-    react: 18.3.1
-    react-dom: 18.3.1
-    react-native: 0.76.6
-    react-native-builder-bob: ^0.35.2
-    react-native-web: ~0.19.13
-  languageName: unknown
-  linkType: soft
-
 "react-devtools-core@npm:^5.3.1":
   version: 5.3.2
   resolution: "react-devtools-core@npm:5.3.2"
@@ -11762,6 +11746,22 @@ __metadata:
   checksum: e20fe84c86ff172fc8d898251b7cc2c43645d108bf96d0b8edf39b98f9a2cae97b40520ee7ed8ee0085ccc94736c4886294456033304151c3f94978cec03df21
   languageName: node
   linkType: hard
+
+"react-native-bitcoin-tools-example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "react-native-bitcoin-tools-example@workspace:example"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@expo/metro-runtime": ~4.0.0
+    expo: ~52.0.25
+    expo-status-bar: ~2.0.1
+    react: 18.3.1
+    react-dom: 18.3.1
+    react-native: 0.76.6
+    react-native-builder-bob: ^0.35.2
+    react-native-web: ~0.19.13
+  languageName: unknown
+  linkType: soft
 
 "react-native-bitcoin-tools@workspace:.":
   version: 0.0.0-use.local

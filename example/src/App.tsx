@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import {
   getCurrentPrice,
   getAddressAmount,
   getCurrentBlockHeight,
-} from 'react-bitcoin-tools';
+} from 'react-native-bitcoin-tools';
 import { version } from '../../package.json';
 
 export default function App() {
@@ -50,6 +50,7 @@ export default function App() {
         <Text>Amount in test wallet:</Text>
         <Text>{amount} BTC</Text>
       </View>
+      <View style={styles.divider} />
     </View>
   );
 }
