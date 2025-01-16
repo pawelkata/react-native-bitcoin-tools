@@ -1,6 +1,10 @@
-# react-bitcoin-tools
+# React-native-bitcoin-tools v0.1.0
 
 A set of helpers for interacting with Bitcoin and Blockchain.
+
+Mainly to be used in React Native apps, but should work on Web as well.
+
+Initial version, not really stable or in final form, so please use with caution.
 
 ## Installation
 
@@ -12,13 +16,14 @@ npm install react-bitcoin-tools
 
 
 ```js
-import { multiply } from 'react-bitcoin-tools';
+import {
+  getCurrentPrice,
+  getAddressAmount,
+  getCurrentBlockHeight,
+} from 'react-bitcoin-tools';
 
-// ...
-
-const result = await multiply(3, 7);
+// NOTE: Initial version. There's no proper docs right now.
 ```
-
 
 ## Contributing
 
