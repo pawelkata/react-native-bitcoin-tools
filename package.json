@@ -46,9 +46,13 @@
     "release": "release-it"
   },
   "keywords": [
+    "bitcoin",
     "react-native",
     "ios",
-    "android"
+    "android",
+    "blockchain",
+    "mempool",
+    "types"
   ],
   "repository": {
     "type": "git",
