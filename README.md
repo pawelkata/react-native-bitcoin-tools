@@ -20,7 +20,7 @@ import {
   getCurrentPrice,
   getAddressAmount,
   getCurrentBlockHeight,
-} from 'react-bitcoin-tools';
+} from 'react-naitve-bitcoin-tools';
 
 // NOTE: Initial version. There's no proper docs right now.
 ```
