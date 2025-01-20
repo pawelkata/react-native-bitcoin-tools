@@ -25,6 +25,23 @@ import {
 // NOTE: Initial version. There's no proper docs right now.
 ```
 
+## Known issues
+
+If you stumble upon this error:
+
+```
+tsserver: Could not find a declaration file for module 'react-native-bitcoin-tools'. '/Users/pawelkata/Documents/code/OKR-2024-25/btc-test/node_modules/react-native-bitcoin-tools/lib/commonjs/index.js' implicitly has an 'any' type.
+```
+
+You may need to adjust `tsconfig.json` in your project by adding:
+
+```
+  "compilerOptions": {
+    {...}
+    "moduleResolution": "bundler"
+  },
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
