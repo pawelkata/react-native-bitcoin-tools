@@ -25,7 +25,6 @@ async function getAddressAmount(address: string, unit: AmountUnit = 'btc') {
     const currentEndpoint = endpoint.replace(':address', address);
     const response = await fetch(currentEndpoint);
     const addressData = (await response.json()) as GetAddressAmountResponse;
-    console.log('add:', addressData);
     const amount =
       addressData.chain_stats.funded_txo_sum -
       addressData.chain_stats.spent_txo_sum;
