@@ -1,4 +1,4 @@
-# React-native-bitcoin-tools v0.1.0
+# React-native-bitcoin-tools v0.2.0
 
 A set of helpers for interacting with Bitcoin and Blockchain.
 
@@ -9,7 +9,7 @@ Initial version, not really stable or in final form, so please use with caution.
 ## Installation
 
 ```sh
-npm install react-bitcoin-tools
+npm install react-native-bitcoin-tools
 ```
 
 ## Usage
@@ -20,6 +20,8 @@ import {
   getCurrentPrice,
   getAddressAmount,
   getCurrentBlockHeight,
+  getLTHRealizedPrice,
+  getSTHRealizedPrice,
 } from 'react-naitve-bitcoin-tools';
 
 // NOTE: Initial version. There's no proper docs right now.
@@ -41,6 +43,14 @@ You may need to adjust `tsconfig.json` in your project by adding:
     "moduleResolution": "bundler"
   },
 ```
+
+## Acknowledgements
+
+This library uses api's supplied by:
+- [Mempool.space](https://mempool.space)
+- [Kibo.money](https://kibo.money)
+
+Thanks!
 
 ## Contributing
 
