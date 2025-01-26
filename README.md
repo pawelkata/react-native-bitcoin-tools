@@ -22,7 +22,7 @@ import {
   getCurrentBlockHeight,
   getLTHRealizedPrice,
   getSTHRealizedPrice,
-} from 'react-naitve-bitcoin-tools';
+} from 'react-native-bitcoin-tools';
 
 // NOTE: Initial version. There's no proper docs right now.
 ```
