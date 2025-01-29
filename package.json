@@ -1,6 +1,6 @@
 {
   "name": "react-native-bitcoin-tools",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A set of helpers for interacting with Bitcoin and Blockchain data.",
   "source": "./src/index.ts",
   "main": "./lib/commonjs/index.js",
