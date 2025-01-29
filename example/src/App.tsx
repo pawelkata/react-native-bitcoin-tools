@@ -6,6 +6,7 @@ import {
   getCurrentBlockHeight,
   getSTHRealizedPrice,
   getLTHRealizedPrice,
+  getRealizedPrice,
 } from 'react-native-bitcoin-tools';
 import { version } from '../../package.json';
 import { version as appVersion } from './../package.json';
@@ -15,8 +16,9 @@ export default function App() {
   const [price, setPrice] = useState(-1);
   const [amount, setAmount] = useState(-1);
   const [block, setBlock] = useState(-1);
-  const [sthPrice, setSthPrice] = useState(-1);
-  const [lthPrice, setLthPrice] = useState(-1);
+  const [sthRealizedPrice, setSthRealizedPrice] = useState(-1);
+  const [lthRealizedPrice, setLthRealizedPrice] = useState(-1);
+  const [realizedPrice, setRealizedPrice] = useState(-1);
 
   useEffect(() => {
     getExampleData();
@@ -32,12 +34,14 @@ export default function App() {
     const heightResult = await getCurrentBlockHeight();
     const sthPriceResult = await getSTHRealizedPrice();
     const lthPriceResult = await getLTHRealizedPrice();
+    const realizedPriceResult = await getRealizedPrice();
 
     setPrice(priceResult);
     setAmount(amountResult);
     setBlock(heightResult);
-    setSthPrice(sthPriceResult);
-    setLthPrice(lthPriceResult);
+    setSthRealizedPrice(sthPriceResult);
+    setLthRealizedPrice(lthPriceResult);
+    setRealizedPrice(realizedPriceResult);
 
     setLoading(false);
   }
@@ -63,11 +67,15 @@ export default function App() {
           </View>
           <View style={styles.row}>
             <Text>Current Bitcoin STH price:</Text>
-            <Text>${sthPrice}</Text>
+            <Text>${sthRealizedPrice}</Text>
+          </View>
+          <View style={styles.row}>
+            <Text>Current Bitcoin realized price:</Text>
+            <Text>${realizedPrice}</Text>
           </View>
           <View style={styles.row}>
             <Text>Current Bitcoin LTH price:</Text>
-            <Text>${lthPrice}</Text>
+            <Text>${lthRealizedPrice}</Text>
           </View>
           <View style={styles.row}>
             <Text>Amount in test wallet:</Text>
