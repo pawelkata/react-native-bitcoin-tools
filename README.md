@@ -1,4 +1,4 @@
-# React-native-bitcoin-tools v0.2.0
+# React-native-bitcoin-tools v0.2.1
 
 A set of helpers for interacting with Bitcoin and Blockchain.
 
@@ -22,6 +22,7 @@ import {
   getCurrentBlockHeight,
   getLTHRealizedPrice,
   getSTHRealizedPrice,
+  getRealizedPrice,
 } from 'react-native-bitcoin-tools';
 
 // NOTE: Initial version. There's no proper docs right now.
